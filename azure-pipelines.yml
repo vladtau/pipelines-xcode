@@ -9,7 +9,6 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    scheme: ''
-    sdk: 'iphoneos'
-    configuration: 'Release'
-    xcodeVersion: '8' # Options: 8, 9, default, specifyPath
+    actions: 'build'
+    xcodeVersion: '8'
+    packageApp: false
